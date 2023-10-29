@@ -1,28 +1,44 @@
-Blog Analytics and Search Tool
-This project is an Express.js-based web application designed for blog analytics and search functionalities. It fetches data from a third-party blog API, analyzes the retrieved information, and provides insightful statistics to clients. Additionally, it enables blog searches based on specific queries.
+# Blog Analytics and Search Tool
 
-Features:
-Data Retrieval: Fetches blog data from a third-party API.
-Data Analysis: Performs analytics on the fetched blog data, including total number of blogs, the longest blog title, count of blogs with "privacy" in the title, and an array of unique blog titles.
-Response: Responds with a JSON object containing blog statistics.
-Blog Search Endpoint: Implements search functionality to filter blogs based on query parameters.
-Error Handling: Handles potential errors that may occur during data retrieval, analysis, or search processes.
-Bonus Challenge: Implements a caching mechanism to store analytics results and search outcomes for increased efficiency.
-Repository Structure:
-markdown
-Copy code
+This web application built with Express.js enables blog data retrieval, analysis, and search functionalities. It interacts with a third-party blog API, performs analytics, and allows users to search within the retrieved blog data.
+
+## Features
+
+- **Data Retrieval**: Fetches blog data from a specified third-party API.
+- **Data Analysis**: Calculates various blog statistics: total blog count, longest title, count of titles with "privacy," and unique titles array.
+- **Blog Search Endpoint**: Provides search functionality to filter blogs based on query parameters.
+- **Error Handling**: Handles potential errors during data retrieval, analysis, or search processes.
+- **Bonus Challenge**: Implements caching mechanisms using Lodash's `memoize` for efficient data storage and retrieval.
+
+## Installation and Usage
+
+1. Clone the repository: `git clone https://github.com/SparshDusad/Assignment.git`
+2. Install dependencies: `npm install`
+3. Start the server: `node server.js`
+4. Use tools like Postman to test the implemented API endpoints.
+
+## Folder Structure
+
 your-project/
-  |_ server.js
-  |_ routes/
-      |_ blogRoutes.js
-Technologies Used:
-Express.js
-Lodash
-Axios
-Usage:
-Clone the repository.
-Install dependencies using npm install.
-Start the server with node server.js.
-Use tools like Postman to test the implemented API endpoints.
-This project serves as an educational implementation for blog analytics and search functionalities using Node.js and Express.
+|_ server.js
+|_ routes/
+|_ blogRoutes.js
 
+
+## Technologies
+
+- Express.js
+- Lodash
+- Axios
+
+## Usage
+
+The server will run on `http://localhost:3000`. Test the provided endpoints to get blog statistics and search for specific blog titles.
+
+## Contributing
+
+Contributions are welcome! Feel free to submit issues or pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
